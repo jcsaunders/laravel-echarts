@@ -14,6 +14,7 @@
         }
     ],
     "require": {
+        "codebarista/laravel-essentials": "^1.2",
         "laravel/framework": "^10.0|^11.0"
     },
     "require-dev": {
@@ -33,6 +34,9 @@
         "psr-4": {
             "Codebarista\\LaravelEcharts\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
     },
     "extra": {
         "laravel": {

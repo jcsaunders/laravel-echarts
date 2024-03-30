@@ -4,12 +4,14 @@ namespace Codebarista\LaravelEcharts\Actions;
 
 use Codebarista\LaravelEcharts\Enums\MimeTypes;
 use Codebarista\LaravelEcharts\Exceptions\StoreChartImageException;
-use Codebarista\LaravelEcharts\Makeable;
+use Codebarista\LaravelEssentials\Traits\Makeable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Process;
 use Illuminate\Support\Str;
 use Throwable;
+
+use function crush_png;
 
 class StoreChartImage
 {
@@ -103,7 +105,7 @@ class StoreChartImage
             new StoreChartImageException($process->errorOutput()));
 
         if ($this->optimize && $this->mimeType === MimeTypes::PNG) {
-            pngcrush($this->fullPath);
+            crush_png($this->fullPath);
         }
 
         return $this->fullPath;

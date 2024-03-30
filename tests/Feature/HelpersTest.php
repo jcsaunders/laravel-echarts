@@ -1,8 +1,7 @@
 <?php
 
 it('has the callable helpers', function () {
-    expect('codebarista_path')->toBeCallable()
-        ->and('pngcrush')->toBeCallable();
+    expect('codebarista_path')->toBeCallable();
 });
 
 it('resolves the tools path', function () {
