@@ -1,5 +1,5 @@
 {
-    "name": "codebarista/laravel-echarts",
+    "name": "jcsaunders/laravel-echarts",
     "description": "Create an image from Apache ECharts.",
     "type": "library",
     "keywords": [
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "codebarista/laravel-essentials": "^1.2",
+        "jcsaunders/laravel-essentials": "^1.2",
         "laravel/framework": "^10.0|^11.0"
     },
     "require-dev": {
