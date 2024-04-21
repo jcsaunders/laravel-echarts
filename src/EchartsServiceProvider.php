@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class EchartsServiceProvider extends ServiceProvider
 {
-    private const string CONFIG = __DIR__.'/../config/echarts.php';
+    private const CONFIG = __DIR__.'/../config/echarts.php';
 
     public function register(): void
     {
