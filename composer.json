@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "jcsaunders/laravel-essentials": "^1.2",
+        "codebarista/laravel-essentials": "^1.2",
         "laravel/framework": "^10.0|^11.0"
     },
     "require-dev": {
